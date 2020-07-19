@@ -1,6 +1,8 @@
 <template>
     <div class="home">
-        <div class="h2">Rick and morty characters</div>
+        <div class="header">
+            <img src="../assets/images/header.png">
+        </div>
         <div class="charactersList">
             <character-block
                     v-for="character in characters"
@@ -8,11 +10,9 @@
                     :character="character"
             ></character-block>
         </div>
-
-
         <paginate
                 v-model="currentPage"
-                :page-count="pages"
+                :page-count="pagesCount"
                 :page-range="3"
                 :margin-pages="2"
                 :click-handler="clickCallback"
@@ -27,6 +27,7 @@
 <script>
     import CharacterBlock from "../components/CharacterBlock";
     import Paginate from 'vuejs-paginate'
+    import axios from "axios";
 
     export default {
         name: 'RickAndMortyList',
@@ -36,32 +37,29 @@
         },
         data() {
             return {
+                characters: null,
                 currentPage: 1,
+                pagesCount: 0
             }
-        },
-        created() {
-            this.$store.dispatch('fetchCharacters', this.currentPage);
-        },
-        computed: {
-            characters() {
-                return this.$store.getters['getCharacterByPage'](this.currentPage);
-            },
-            pages() {
-                return this.$store.state.pages;
-            },
         },
         watch: {
             currentPage: {
                 handler(page) {
-                    this.$store.dispatch('fetchCharacters', page);
+                    axios
+                        .get('https://rickandmortyapi.com/api/character/?page=' + page)
+                        .then(({data}) => {
+                            this.pagesCount = data.info.pages;
+                            this.characters = data.results;
+                        })
+                        .catch(err => console.log(err));
                 },
                 immediate: true
             }
         },
         methods: {
-            clickCallback (pageNum) {
+            clickCallback(pageNum) {
                 console.log({pageNum})
-            }
+            },
         }
     }
 </script>

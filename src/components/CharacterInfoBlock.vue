@@ -8,9 +8,21 @@
                 {{ character.name }}
             </div>
             <div>
+                <div class="label">Gender:</div>
+                <span class="characterLocation">{{ character.gender }}</span>
+            </div>
+            <div>
                 <span class="characterStatus"
                       :class="[character.status === 'Alive' ? 'alive' : 'dead', character.status === 'unknown' ? 'unknown' : '']">{{ character.status }}</span>
                 <span>- {{character.species}}</span>
+            </div>
+            <div>
+                <div class="label">Type:</div>
+                <span class="characterLocation">{{ character.type }}</span>
+            </div>
+            <div>
+                <div class="label">Origin:</div>
+                <span class="characterLocation">{{ character.origin.name }}</span>
             </div>
             <div>
                 <div class="label">Last known location:</div>

@@ -1,29 +1,36 @@
 <template>
-    <div class="characterDetailedInfo">
-        <character-block v-if="character" :character="character" />
+    <div class="home">
+        <div class="characterDetailedInfo">
+            <character-info-block v-if="character" :character="character"/>
             <button class="goBack" @click="goBack()">Go back</button>
+        </div>
     </div>
 </template>
 
 <script>
-    import CharacterBlock from "../components/CharacterBlock";
+    import CharacterInfoBlock from "../components/CharacterInfoBlock";
+    import axios from "axios";
 
     export default {
         name: "RickAndMortyCharacter",
         components: {
-            CharacterBlock
+            CharacterInfoBlock
         },
         data() {
             return {
                 character: null
             }
         },
-        async created() {
+        created() {
             try {
                 const {id} = this.$route.params;
                 if (id) {
-                    const {data} = await this.$store.dispatch('fetchSingleCharacter', id);
-                    this.character = data;
+                    axios
+                        .get('https://rickandmortyapi.com/api/character/' + id)
+                        .then(({data}) => {
+                            this.character = data;
+                        })
+                        .catch(err => console.log(err));
 
                 }
             } catch (err) {
