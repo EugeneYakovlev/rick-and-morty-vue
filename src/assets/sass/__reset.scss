@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: inherit;
+  outline: none;
+
+  &::before,
+  &::after {
+    box-sizing: inherit;
+  }
+}
+
+html {
+  font-size: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+p,
+pre,
+blockquote,
+figure,
+hr {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input,
+textarea,
+select,
+button {
+  outline: none;
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+  box-shadow: none;
+  border: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+@mixin placeholderColor($color) {
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $color;
+  }
+
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: $color;
+  }
+
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: $color;
+  }
+}
+

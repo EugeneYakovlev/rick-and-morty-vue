@@ -1,0 +1,424 @@
+@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap");
+/* line 1, ../sass/__reset.scss */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: inherit;
+  outline: none;
+}
+/* line 8, ../sass/__reset.scss */
+*::before, *::after {
+  box-sizing: inherit;
+}
+
+/* line 14, ../sass/__reset.scss */
+html {
+  font-size: 0;
+}
+
+/* line 18, ../sass/__reset.scss */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+p,
+pre,
+blockquote,
+figure,
+hr {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 37, ../sass/__reset.scss */
+ul {
+  list-style: none;
+}
+
+/* line 41, ../sass/__reset.scss */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 46, ../sass/__reset.scss */
+input,
+textarea,
+select,
+button {
+  outline: none;
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+  box-shadow: none;
+  border: 0;
+}
+
+/* line 58, ../sass/__reset.scss */
+button {
+  cursor: pointer;
+}
+
+/* line 62, ../sass/__reset.scss */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+/* line 69, ../sass/__reset.scss */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* line 73, ../sass/__reset.scss */
+body {
+  overflow-x: hidden;
+}
+
+/* line 13, ../sass/main-styles.scss */
+.wrapper {
+  position: relative;
+  min-height: 100vh;
+  font-family: 'Gloria Hallelujah', cursive;
+  background: #159957;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #159957, #155799);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #159957, #155799);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+/* line 22, ../sass/main-styles.scss */
+.wrapper > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* line 28, ../sass/main-styles.scss */
+.home {
+  position: relative;
+  z-index: 3;
+}
+/* line 32, ../sass/main-styles.scss */
+.home .header {
+  padding-top: 100px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+/* line 36, ../sass/main-styles.scss */
+.home .header img {
+  height: auto;
+  width: 100%;
+  object-fit: contain;
+}
+
+/* line 44, ../sass/main-styles.scss */
+.h2 {
+  font-size: 100px;
+}
+
+/* line 48, ../sass/main-styles.scss */
+.charactersList {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 70vw;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+/* line 59, ../sass/main-styles.scss */
+.charactersList .characterBlock {
+  background: #f6f6f6;
+  min-width: 300px;
+  width: calc((100% - 80px) / 2);
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+/* line 67, ../sass/main-styles.scss */
+.charactersList .characterBlock .characterBlockImage img {
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+/* line 71, ../sass/main-styles.scss */
+.charactersList .characterBlock:hover {
+  -moz-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.02), 0 10px 10px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.02), 0 10px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.02), 0 10px 10px rgba(0, 0, 0, 0.05);
+}
+/* line 74, ../sass/main-styles.scss */
+.charactersList .characterBlock:hover .characterBlockImage img {
+  -moz-transform: scale(1.075);
+  -ms-transform: scale(1.075);
+  -webkit-transform: scale(1.075);
+  transform: scale(1.075);
+}
+
+/* line 81, ../sass/main-styles.scss */
+.characterBlock {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  margin: 10px;
+  padding: 20px;
+}
+/* line 90, ../sass/main-styles.scss */
+.characterBlock .characterBlockImage {
+  max-width: 150px;
+  height: 150px;
+  width: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+/* line 98, ../sass/main-styles.scss */
+.characterBlock .characterBlockImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* line 105, ../sass/main-styles.scss */
+.characterBlock .characterBlockInfo {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  max-width: calc(100% - 120px - 10px);
+  margin-left: 12px;
+  font-size: 14px;
+}
+/* line 113, ../sass/main-styles.scss */
+.characterBlock .characterBlockInfo div {
+  display: block;
+}
+/* line 116, ../sass/main-styles.scss */
+.characterBlock .characterBlockInfo div + div {
+  margin-top: 10px;
+}
+/* line 121, ../sass/main-styles.scss */
+.characterBlock .characterBlockInfo .characterName {
+  font-size: 16px;
+  font-weight: bold;
+}
+/* line 126, ../sass/main-styles.scss */
+.characterBlock .characterBlockInfo .characterStatus {
+  margin-right: 5px;
+  font-weight: bold;
+}
+/* line 130, ../sass/main-styles.scss */
+.characterBlock .characterBlockInfo .characterStatus.alive {
+  color: green;
+}
+/* line 134, ../sass/main-styles.scss */
+.characterBlock .characterBlockInfo .characterStatus.dead {
+  color: darkred;
+}
+/* line 138, ../sass/main-styles.scss */
+.characterBlock .characterBlockInfo .characterStatus.unknown {
+  color: #5d5d5d;
+}
+/* line 143, ../sass/main-styles.scss */
+.characterBlock .characterBlockInfo .label {
+  opacity: 0.7;
+  margin-bottom: 2px;
+}
+/* line 148, ../sass/main-styles.scss */
+.characterBlock .characterBlockInfo .characterLocation {
+  font-weight: 500;
+}
+
+/* line 154, ../sass/main-styles.scss */
+.characterDetailedInfo {
+  display: flex;
+  background: #fff;
+  min-height: 100vh;
+  padding: 40px 0;
+}
+/* line 160, ../sass/main-styles.scss */
+.characterDetailedInfo .characterBlock {
+  max-width: 900px;
+  margin: 0 auto;
+  pointer-events: none;
+  justify-content: space-around;
+}
+/* line 166, ../sass/main-styles.scss */
+.characterDetailedInfo .characterBlock .characterBlockImage {
+  max-width: 400px;
+  height: 400px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 172, ../sass/main-styles.scss */
+.characterDetailedInfo .characterBlock .characterBlockInfo {
+  margin-left: 40px;
+  font-size: 18px;
+}
+/* line 176, ../sass/main-styles.scss */
+.characterDetailedInfo .characterBlock .characterBlockInfo .characterName {
+  font-size: 28px;
+  line-height: 36px;
+}
+
+/* line 184, ../sass/main-styles.scss */
+.goBack {
+  cursor: pointer;
+  position: absolute;
+  left: 80px;
+  top: 60px;
+  font-size: 12px;
+  font-weight: bold;
+  appearance: none;
+  box-shadow: none;
+  background: transparent;
+  border: 0;
+  outline: none;
+  text-transform: uppercase;
+}
+/* line 199, ../sass/main-styles.scss */
+.goBack:hover:before {
+  left: -20px;
+}
+/* line 204, ../sass/main-styles.scss */
+.goBack:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  display: inline-block;
+  background: url("../images/back.svg") no-repeat center/contain;
+  width: 10px;
+  height: 9px;
+  left: -30px;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+/* line 220, ../sass/main-styles.scss */
+.pagination {
+  color: #fff;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 50px;
+  font-size: 14px;
+}
+/* line 230, ../sass/main-styles.scss */
+.pagination li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+/* line 236, ../sass/main-styles.scss */
+.pagination li:not(.page-item) {
+  margin: 0 50px;
+}
+/* line 240, ../sass/main-styles.scss */
+.pagination li.disabled {
+  opacity: 0.25;
+  pointer-events: none;
+}
+/* line 245, ../sass/main-styles.scss */
+.pagination li.page-item {
+  width: 40px;
+  height: 40px;
+  opacity: 0.75;
+}
+/* line 250, ../sass/main-styles.scss */
+.pagination li.page-item.active {
+  opacity: 1;
+  font-weight: bold;
+}
+
+/* line 258, ../sass/main-styles.scss */
+#space, .stars {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* line 267, ../sass/main-styles.scss */
+.stars {
+  background-image: radial-gradient(2px 2px at 20px 30px, #eeeeee, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 40px 70px, #ffffff, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 50px 160px, #dddddd, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 90px 40px, #ffffff, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 130px 80px, #ffffff, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 160px 120px, #dddddd, rgba(0, 0, 0, 0));
+  background-repeat: repeat;
+  background-size: 200px 200px;
+  animation: zoom 5s infinite;
+  opacity: 0;
+}
+
+/* line 281, ../sass/main-styles.scss */
+.stars:nth-child(1) {
+  background-position: 50% 50%;
+  animation-delay: 0s;
+}
+
+/* line 285, ../sass/main-styles.scss */
+.stars:nth-child(2) {
+  background-position: 20% 60%;
+  animation-delay: 1s;
+}
+
+/* line 289, ../sass/main-styles.scss */
+.stars:nth-child(3) {
+  background-position: -20% -30%;
+  animation-delay: 2s;
+}
+
+/* line 293, ../sass/main-styles.scss */
+.stars:nth-child(4) {
+  background-position: 40% -80%;
+  animation-delay: 3s;
+}
+
+/* line 297, ../sass/main-styles.scss */
+.stars:nth-child(5) {
+  background-position: -20% 30%;
+  animation-delay: 4s;
+}
+
+@keyframes zoom {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+    animation-timing-function: ease-in;
+  }
+  85% {
+    opacity: 1;
+    transform: scale(2.8);
+    animation-timing-function: linear;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(3.5);
+  }
+}
+/* line 319, ../sass/main-styles.scss */
+a {
+  outline: none;
+}
