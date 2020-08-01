@@ -33,6 +33,7 @@ $card-hover-shadow: 0 14px 28px rgba(0, 0, 0, 0.02), 0 10px 10px rgba(0, 0, 0, 0
     padding-top: 100px;
     max-width: 600px;
     margin: 0 auto;
+
     img {
       height: auto;
       width: 100%;
@@ -265,13 +266,12 @@ $card-hover-shadow: 0 14px 28px rgba(0, 0, 0, 0.02), 0 10px 10px rgba(0, 0, 0, 0
 }
 
 .stars {
-  background-image:
-          radial-gradient(2px 2px at 20px 30px, #eee, rgba(0,0,0,0)),
-          radial-gradient(2px 2px at 40px 70px, #fff, rgba(0,0,0,0)),
-          radial-gradient(2px 2px at 50px 160px, #ddd, rgba(0,0,0,0)),
-          radial-gradient(2px 2px at 90px 40px, #fff, rgba(0,0,0,0)),
-          radial-gradient(2px 2px at 130px 80px, #fff, rgba(0,0,0,0)),
-          radial-gradient(2px 2px at 160px 120px, #ddd, rgba(0,0,0,0));
+  background-image: radial-gradient(2px 2px at 20px 30px, #eee, rgba(0, 0, 0, 0)),
+  radial-gradient(2px 2px at 40px 70px, #fff, rgba(0, 0, 0, 0)),
+  radial-gradient(2px 2px at 50px 160px, #ddd, rgba(0, 0, 0, 0)),
+  radial-gradient(2px 2px at 90px 40px, #fff, rgba(0, 0, 0, 0)),
+  radial-gradient(2px 2px at 130px 80px, #fff, rgba(0, 0, 0, 0)),
+  radial-gradient(2px 2px at 160px 120px, #ddd, rgba(0, 0, 0, 0));
   background-repeat: repeat;
   background-size: 200px 200px;
   animation: zoom 5s infinite;
@@ -282,18 +282,22 @@ $card-hover-shadow: 0 14px 28px rgba(0, 0, 0, 0.02), 0 10px 10px rgba(0, 0, 0, 0
   background-position: 50% 50%;
   animation-delay: 0s;
 }
+
 .stars:nth-child(2) {
   background-position: 20% 60%;
   animation-delay: 1s;
 }
+
 .stars:nth-child(3) {
   background-position: -20% -30%;
   animation-delay: 2s;
 }
+
 .stars:nth-child(4) {
   background-position: 40% -80%;
   animation-delay: 3s;
 }
+
 .stars:nth-child(5) {
   background-position: -20% 30%;
   animation-delay: 4s;
@@ -318,4 +322,81 @@ $card-hover-shadow: 0 14px 28px rgba(0, 0, 0, 0.02), 0 10px 10px rgba(0, 0, 0, 0
 
 a {
   outline: none;
+}
+
+@media all and(max-width: 768px) {
+  .home {
+    .header {
+      padding: 0 20px;
+    }
+  }
+  .charactersList {
+    max-width: 100%;
+    padding: 40px 20px 0;
+
+    .characterBlock {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      padding: 0;
+      overflow: hidden;
+
+      .characterBlockImage {
+        max-width: 100%;
+        border-radius: 0;
+        height: 200px;
+      }
+
+      .characterBlockInfo {
+        padding: 0 20px 20px;
+      }
+    }
+  }
+
+  .characterBlock {
+    flex-direction: column;
+
+    .characterBlockInfo {
+      max-width: 100%;
+      width: 100%;
+      margin: 20px 0 0 0;
+      text-align: center;
+    }
+  }
+
+  .characterDetailedInfo {
+    padding: 60px 0 40px;
+
+    .characterBlock {
+      .characterBlockImage {
+        height: 300px;
+      }
+
+      .characterBlockInfo {
+        margin: 30px 0 0 0;
+        max-width: 100%;
+        width: 100%;
+        text-align: left;
+      }
+    }
+  }
+
+  .pagination {
+    margin-top: 40px;
+
+    li.page-item {
+      flex-shrink: 0;
+      width: 35px;
+    }
+
+    li:not(.page-item) {
+      margin: 0 15px;
+    }
+  }
+
+  .goBack {
+    left: 50px;
+    font-size: 14px;
+    top: 25px;
+  }
 }

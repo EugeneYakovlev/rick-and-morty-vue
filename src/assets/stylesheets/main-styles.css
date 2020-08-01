@@ -113,19 +113,19 @@ body {
   max-width: 600px;
   margin: 0 auto;
 }
-/* line 36, ../sass/main-styles.scss */
+/* line 37, ../sass/main-styles.scss */
 .home .header img {
   height: auto;
   width: 100%;
   object-fit: contain;
 }
 
-/* line 44, ../sass/main-styles.scss */
+/* line 45, ../sass/main-styles.scss */
 .h2 {
   font-size: 100px;
 }
 
-/* line 48, ../sass/main-styles.scss */
+/* line 49, ../sass/main-styles.scss */
 .charactersList {
   display: flex;
   flex-direction: row;
@@ -136,7 +136,7 @@ body {
   margin: 0 auto;
   padding-top: 100px;
 }
-/* line 59, ../sass/main-styles.scss */
+/* line 60, ../sass/main-styles.scss */
 .charactersList .characterBlock {
   background: #f6f6f6;
   min-width: 300px;
@@ -149,20 +149,20 @@ body {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-/* line 67, ../sass/main-styles.scss */
+/* line 68, ../sass/main-styles.scss */
 .charactersList .characterBlock .characterBlockImage img {
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-/* line 71, ../sass/main-styles.scss */
+/* line 72, ../sass/main-styles.scss */
 .charactersList .characterBlock:hover {
   -moz-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.02), 0 10px 10px rgba(0, 0, 0, 0.05);
   -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.02), 0 10px 10px rgba(0, 0, 0, 0.05);
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.02), 0 10px 10px rgba(0, 0, 0, 0.05);
 }
-/* line 74, ../sass/main-styles.scss */
+/* line 75, ../sass/main-styles.scss */
 .charactersList .characterBlock:hover .characterBlockImage img {
   -moz-transform: scale(1.075);
   -ms-transform: scale(1.075);
@@ -170,7 +170,7 @@ body {
   transform: scale(1.075);
 }
 
-/* line 81, ../sass/main-styles.scss */
+/* line 82, ../sass/main-styles.scss */
 .characterBlock {
   cursor: pointer;
   display: flex;
@@ -180,7 +180,7 @@ body {
   margin: 10px;
   padding: 20px;
 }
-/* line 90, ../sass/main-styles.scss */
+/* line 91, ../sass/main-styles.scss */
 .characterBlock .characterBlockImage {
   max-width: 150px;
   height: 150px;
@@ -189,13 +189,13 @@ body {
   overflow: hidden;
   flex-shrink: 0;
 }
-/* line 98, ../sass/main-styles.scss */
+/* line 99, ../sass/main-styles.scss */
 .characterBlock .characterBlockImage img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-/* line 105, ../sass/main-styles.scss */
+/* line 106, ../sass/main-styles.scss */
 .characterBlock .characterBlockInfo {
   display: flex;
   flex-direction: column;
@@ -204,61 +204,61 @@ body {
   margin-left: 12px;
   font-size: 14px;
 }
-/* line 113, ../sass/main-styles.scss */
+/* line 114, ../sass/main-styles.scss */
 .characterBlock .characterBlockInfo div {
   display: block;
 }
-/* line 116, ../sass/main-styles.scss */
+/* line 117, ../sass/main-styles.scss */
 .characterBlock .characterBlockInfo div + div {
   margin-top: 10px;
 }
-/* line 121, ../sass/main-styles.scss */
+/* line 122, ../sass/main-styles.scss */
 .characterBlock .characterBlockInfo .characterName {
   font-size: 16px;
   font-weight: bold;
 }
-/* line 126, ../sass/main-styles.scss */
+/* line 127, ../sass/main-styles.scss */
 .characterBlock .characterBlockInfo .characterStatus {
   margin-right: 5px;
   font-weight: bold;
 }
-/* line 130, ../sass/main-styles.scss */
+/* line 131, ../sass/main-styles.scss */
 .characterBlock .characterBlockInfo .characterStatus.alive {
   color: green;
 }
-/* line 134, ../sass/main-styles.scss */
+/* line 135, ../sass/main-styles.scss */
 .characterBlock .characterBlockInfo .characterStatus.dead {
   color: darkred;
 }
-/* line 138, ../sass/main-styles.scss */
+/* line 139, ../sass/main-styles.scss */
 .characterBlock .characterBlockInfo .characterStatus.unknown {
   color: #5d5d5d;
 }
-/* line 143, ../sass/main-styles.scss */
+/* line 144, ../sass/main-styles.scss */
 .characterBlock .characterBlockInfo .label {
   opacity: 0.7;
   margin-bottom: 2px;
 }
-/* line 148, ../sass/main-styles.scss */
+/* line 149, ../sass/main-styles.scss */
 .characterBlock .characterBlockInfo .characterLocation {
   font-weight: 500;
 }
 
-/* line 154, ../sass/main-styles.scss */
+/* line 155, ../sass/main-styles.scss */
 .characterDetailedInfo {
   display: flex;
   background: #fff;
   min-height: 100vh;
   padding: 40px 0;
 }
-/* line 160, ../sass/main-styles.scss */
+/* line 161, ../sass/main-styles.scss */
 .characterDetailedInfo .characterBlock {
   max-width: 900px;
   margin: 0 auto;
   pointer-events: none;
   justify-content: space-around;
 }
-/* line 166, ../sass/main-styles.scss */
+/* line 167, ../sass/main-styles.scss */
 .characterDetailedInfo .characterBlock .characterBlockImage {
   max-width: 400px;
   height: 400px;
@@ -266,18 +266,18 @@ body {
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 172, ../sass/main-styles.scss */
+/* line 173, ../sass/main-styles.scss */
 .characterDetailedInfo .characterBlock .characterBlockInfo {
   margin-left: 40px;
   font-size: 18px;
 }
-/* line 176, ../sass/main-styles.scss */
+/* line 177, ../sass/main-styles.scss */
 .characterDetailedInfo .characterBlock .characterBlockInfo .characterName {
   font-size: 28px;
   line-height: 36px;
 }
 
-/* line 184, ../sass/main-styles.scss */
+/* line 185, ../sass/main-styles.scss */
 .goBack {
   cursor: pointer;
   position: absolute;
@@ -292,11 +292,11 @@ body {
   outline: none;
   text-transform: uppercase;
 }
-/* line 199, ../sass/main-styles.scss */
+/* line 200, ../sass/main-styles.scss */
 .goBack:hover:before {
   left: -20px;
 }
-/* line 204, ../sass/main-styles.scss */
+/* line 205, ../sass/main-styles.scss */
 .goBack:before {
   content: '';
   position: absolute;
@@ -314,7 +314,7 @@ body {
   transition: all 0.5s ease;
 }
 
-/* line 220, ../sass/main-styles.scss */
+/* line 221, ../sass/main-styles.scss */
 .pagination {
   color: #fff;
   margin-top: 80px;
@@ -325,35 +325,35 @@ body {
   padding: 0 0 50px;
   font-size: 14px;
 }
-/* line 230, ../sass/main-styles.scss */
+/* line 231, ../sass/main-styles.scss */
 .pagination li {
   display: flex;
   align-items: center;
   justify-content: center;
   list-style: none;
 }
-/* line 236, ../sass/main-styles.scss */
+/* line 237, ../sass/main-styles.scss */
 .pagination li:not(.page-item) {
   margin: 0 50px;
 }
-/* line 240, ../sass/main-styles.scss */
+/* line 241, ../sass/main-styles.scss */
 .pagination li.disabled {
   opacity: 0.25;
   pointer-events: none;
 }
-/* line 245, ../sass/main-styles.scss */
+/* line 246, ../sass/main-styles.scss */
 .pagination li.page-item {
   width: 40px;
   height: 40px;
   opacity: 0.75;
 }
-/* line 250, ../sass/main-styles.scss */
+/* line 251, ../sass/main-styles.scss */
 .pagination li.page-item.active {
   opacity: 1;
   font-weight: bold;
 }
 
-/* line 258, ../sass/main-styles.scss */
+/* line 259, ../sass/main-styles.scss */
 #space, .stars {
   overflow: hidden;
   position: absolute;
@@ -363,7 +363,7 @@ body {
   right: 0;
 }
 
-/* line 267, ../sass/main-styles.scss */
+/* line 268, ../sass/main-styles.scss */
 .stars {
   background-image: radial-gradient(2px 2px at 20px 30px, #eeeeee, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 40px 70px, #ffffff, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 50px 160px, #dddddd, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 90px 40px, #ffffff, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 130px 80px, #ffffff, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 160px 120px, #dddddd, rgba(0, 0, 0, 0));
   background-repeat: repeat;
@@ -378,25 +378,25 @@ body {
   animation-delay: 0s;
 }
 
-/* line 285, ../sass/main-styles.scss */
+/* line 286, ../sass/main-styles.scss */
 .stars:nth-child(2) {
   background-position: 20% 60%;
   animation-delay: 1s;
 }
 
-/* line 289, ../sass/main-styles.scss */
+/* line 291, ../sass/main-styles.scss */
 .stars:nth-child(3) {
   background-position: -20% -30%;
   animation-delay: 2s;
 }
 
-/* line 293, ../sass/main-styles.scss */
+/* line 296, ../sass/main-styles.scss */
 .stars:nth-child(4) {
   background-position: 40% -80%;
   animation-delay: 3s;
 }
 
-/* line 297, ../sass/main-styles.scss */
+/* line 301, ../sass/main-styles.scss */
 .stars:nth-child(5) {
   background-position: -20% 30%;
   animation-delay: 4s;
@@ -418,7 +418,87 @@ body {
     transform: scale(3.5);
   }
 }
-/* line 319, ../sass/main-styles.scss */
+/* line 323, ../sass/main-styles.scss */
 a {
   outline: none;
+}
+
+@media all and (max-width: 768px) {
+  /* line 329, ../sass/main-styles.scss */
+  .home .header {
+    padding: 0 20px;
+  }
+
+  /* line 333, ../sass/main-styles.scss */
+  .charactersList {
+    max-width: 100%;
+    padding: 40px 20px 0;
+  }
+  /* line 337, ../sass/main-styles.scss */
+  .charactersList .characterBlock {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  /* line 344, ../sass/main-styles.scss */
+  .charactersList .characterBlock .characterBlockImage {
+    max-width: 100%;
+    border-radius: 0;
+    height: 200px;
+  }
+  /* line 350, ../sass/main-styles.scss */
+  .charactersList .characterBlock .characterBlockInfo {
+    padding: 0 20px 20px;
+  }
+
+  /* line 356, ../sass/main-styles.scss */
+  .characterBlock {
+    flex-direction: column;
+  }
+  /* line 359, ../sass/main-styles.scss */
+  .characterBlock .characterBlockInfo {
+    max-width: 100%;
+    width: 100%;
+    margin: 20px 0 0 0;
+    text-align: center;
+  }
+
+  /* line 367, ../sass/main-styles.scss */
+  .characterDetailedInfo {
+    padding: 60px 0 40px;
+  }
+  /* line 371, ../sass/main-styles.scss */
+  .characterDetailedInfo .characterBlock .characterBlockImage {
+    height: 300px;
+  }
+  /* line 375, ../sass/main-styles.scss */
+  .characterDetailedInfo .characterBlock .characterBlockInfo {
+    margin: 30px 0 0 0;
+    max-width: 100%;
+    width: 100%;
+    text-align: left;
+  }
+
+  /* line 384, ../sass/main-styles.scss */
+  .pagination {
+    margin-top: 40px;
+  }
+  /* line 387, ../sass/main-styles.scss */
+  .pagination li.page-item {
+    flex-shrink: 0;
+    width: 35px;
+  }
+  /* line 392, ../sass/main-styles.scss */
+  .pagination li:not(.page-item) {
+    margin: 0 15px;
+  }
+
+  /* line 397, ../sass/main-styles.scss */
+  .goBack {
+    left: 50px;
+    font-size: 14px;
+    top: 25px;
+  }
 }
