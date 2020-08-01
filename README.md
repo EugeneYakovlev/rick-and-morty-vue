@@ -1,5 +1,9 @@
 # rick-morty
 
+![alt text](src/preview.png)
+
+##[Live version](https://eugeneyakovlev.github.io/rick-and-morty-vue/dist/)
+
 ## Project setup
 ```
 npm install
